@@ -17,7 +17,7 @@ data = pd.read_excel('Matrice Afidium copie.xlsx', sheet_name='RAW DATA1')
 skills=data.columns[1:].tolist()
 skills.sort()
 column_name=st.selectbox('Select a skill', skills)
-top3=data[column_name].sort_values(ascending=False)[:3].index
+top3=data[column_name].sort_values(ascending=False)[:5].index
 df=data[['Ton prénom/nom',column_name]].loc[top3]
 df.rename(columns={column_name:'Score'}, inplace=True)
 
