@@ -8,7 +8,7 @@ import pandas as pd
 import streamlit as st
 import openpyxl
 
-# Read the CSV file
+# Read the CSV file (change dir below)
 data = pd.read_excel('Matrice Afidium copie.xlsx', sheet_name='RAW DATA1')
 
 
